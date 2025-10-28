@@ -1,0 +1,31 @@
+# FastAPI and API dependencies
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# Database and ORM
+sqlalchemy==2.0.23
+alembic==1.12.1
+psycopg2-binary==2.9.9
+
+# LangChain and AI dependencies
+langchain==0.1.0
+langchain-openai==0.0.2
+langchain-community==0.0.10
+langgraph==0.0.20
+
+# External data sources
+arxiv==1.4.8
+wikipedia==1.4.0
+duckduckgo-search==3.9.6
+beautifulsoup4==4.12.2
+
+# Utilities and logging
+loguru==0.7.2
+tiktoken==0.5.2
+python-dotenv==1.0.0
+
+# Development tools
+pytest==7.4.3
+pytest-asyncio==0.21.1

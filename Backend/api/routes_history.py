@@ -1,17 +1,32 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import joinedload
 from sqlalchemy.exc import SQLAlchemyError
+from pydantic import BaseModel, Field
+from typing import List, Optional
 from db.session import get_db
 from db import models
 import traceback
+import logging
 
 router = APIRouter()
+logger = logging.getLogger(__name__)
 
-@router.get("/history/test")
-def test_endpoint():
-    return {"status": "ok", "message": "History API is working"}
+class MessageModel(BaseModel):
+    role: str
+    content: str
+    timestamp: str
 
-@router.get("/history/{user_id}")
+class SessionModel(BaseModel):
+    session_id: int
+    query: str
+    created_at: str
+    messages: List[MessageModel]
+
+@router.get("/health")
+def health_check():
+    return {"status": "healthy", "message": "History API is working"}
+
+@router.get("/history/{user_id}", response_model=List[SessionModel])
 def get_history(user_id: int, db=Depends(get_db)):
     try:
         user = db.query(models.User).filter(models.User.id == user_id).first()

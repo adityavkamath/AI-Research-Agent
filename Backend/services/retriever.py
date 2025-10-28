@@ -1,3 +1,8 @@
+import warnings
+# Suppress BeautifulSoup parser warnings from wikipedia package
+warnings.filterwarnings("ignore", message=".*looks like you're parsing an HTML document with an XML parser.*", category=UserWarning)
+warnings.filterwarnings("ignore", message=".*No parser was explicitly specified.*", category=UserWarning)
+
 try:
     from langchain_community.document_loaders import ArxivLoader, WikipediaLoader
     from langchain_community.tools import DuckDuckGoSearchResults

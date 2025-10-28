@@ -1,0 +1,200 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+
+# Environment variables
+.env*
+!.env.example
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# PostgreSQL
+*.dump
+*.sql
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# Spyder
+.spyderproject
+.spyproject
+
+# Rope
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Node.js and Frontend
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+.pnpm-debug.log*
+.pnpm-store/
+
+# Frontend build outputs
+dist/
+build/
+.vite/
+.next/
+.nuxt/
+.output/
+.cache/
+
+# API Keys and Secrets
+*.key
+*.pem
+secrets.json
+credentials.json
+.env.local
+.env.production
+.env.development
+
+# Logs
+*.log
+logs/
+log/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+database.db
+
+# Alembic
+alembic.ini.local
+
+# AI Research Agent specific
+research_cache/
+embeddings_cache/
+vector_store/
+*.pkl
+*.pickle
+
+# Local development
+local_settings.py
+instance/
+.webassets-cache
+
+# Docker
+.dockerignore
+Dockerfile*
+docker-compose*
+
+# Deployment
+.vercel
+.netlify
+deploy.sh
+
+# macOS
+.AppleDouble
+.LSOverride
+
+# Windows
+*.exe
+*.msi
+*.msm
+*.msp
+
+# Linux
+*.AppImage
+*.deb
+*.rpm
